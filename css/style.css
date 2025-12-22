@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -90,7 +94,9 @@ strong {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-.kolom-satu .satu {
+.kolom-satu .tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   margin-top: 15px;
   color: #b08968;
   max-width: 500px;
@@ -202,7 +208,7 @@ strong {
 }
 
 .front-page {
-  background-image: url(../img/_DSC0044.jpg);
+  background-image: url(../img/Project/4\ \(1\).png);
   background-size: cover;
 }
 
@@ -210,7 +216,7 @@ strong {
   position: absolute;
   bottom: 50px;
   left: 100px;
-  color: #3e592a;
+  color: #ede0d4;
   text-shadow: 2px 2px 6px rgba(245, 246, 233, 0.8);
   text-align: center;
 }
@@ -223,7 +229,7 @@ strong {
 .card-subtitle {
   font-size: 1.2rem;
   margin-top: 5px;
-  color: #3e592a;
+  color: #ede0d4;
 }
 
 .back-page {
@@ -256,8 +262,8 @@ strong {
 }
 
 .card-button {
-  background-color: #3e592a;
-  color: #f5f6e9;
+  background-color: #b08968;
+  color: #ede0d4;
   padding: 17px 24px;
   font-size: 1rem;
   border: none;
@@ -268,9 +274,10 @@ strong {
 
 .card-button:hover {
   background-color: transparent;
-  color: #3e592a;
+  color: #ede0d4;
   border: 1px solid;
 }
+
 .wrapper-dua {
   perspective: 3000px;
 }
@@ -308,7 +315,7 @@ strong {
   position: absolute;
   bottom: 50px;
   left: 100px;
-  color: #3e592a;
+  color: #ede0d4;
   text-shadow: 2px 2px 6px rgba(245, 246, 233, 0.8);
   text-align: center;
 }
@@ -321,7 +328,7 @@ strong {
 .card-subtitle2 {
   font-size: 1.2rem;
   margin-top: 5px;
-  color: #3e592a;
+  color: #ede0d4;
 }
 
 .back-page2 {
@@ -354,8 +361,8 @@ strong {
 }
 
 .card-button {
-  background-color: #3e592a;
-  color: #f5f6e9;
+  background-color: #b08968;
+  color: #ede0d4;
   padding: 17px 24px;
   font-size: 1rem;
   border: none;
@@ -366,7 +373,7 @@ strong {
 
 .card-button:hover {
   background-color: transparent;
-  color: #3e592a;
+  color: #ede0d4;
   border: 1px solid;
 }
 
@@ -399,7 +406,7 @@ strong {
 }
 
 .front-page3 {
-  background-image: url(../img/_DSC0028.jpg);
+  background-image: url(../img/Project/2.1.jpg);
   background-size: cover;
 }
 
@@ -407,7 +414,7 @@ strong {
   position: absolute;
   bottom: 50px;
   left: 70px;
-  color: #8cbb49;
+  color: #ede0d4;
   text-shadow: 2px 2px 6px rgba(245, 246, 233, 0.8);
   text-align: center;
 }
@@ -420,7 +427,7 @@ strong {
 .card-subtitle3 {
   font-size: 1.2rem;
   margin-top: 5px;
-  color: #8cbb49;
+  color: #ede0d4;
 }
 
 .back-page3 {
@@ -458,8 +465,8 @@ strong {
 }
 
 .card-button {
-  background-color: #3e592a;
-  color: #f5f6e9;
+  background-color: #b08968;
+  color: #ede0d4;
   padding: 17px 24px;
   font-size: 1rem;
   border: none;
@@ -470,7 +477,7 @@ strong {
 
 .card-button:hover {
   background-color: transparent;
-  color: #3e592a;
+  color: #ede0d4;
   border: 1px solid;
 }
 
@@ -481,9 +488,9 @@ strong {
 }
 
 .container-tiga img {
-  width: 350px;
+  width: 500px;
   height: auto;
-  rotate: -5deg;
+  border-radius: 10px;
 }
 
 .tilt-in-fwd-tl {
@@ -497,7 +504,7 @@ strong {
   align-content: center;
   margin-bottom: 25px;
   margin-left: 50px;
-  text-shadow: 2px 2px 3px rgba(140, 187, 73, 0.5);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
   animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
 }
 
@@ -506,13 +513,68 @@ strong {
   margin-bottom: 15px;
   font-size: 65px;
   font-weight: 800;
-  color: #8cbb49;
+  color: #b08968;
 }
 
 .desc-content {
   max-width: 650px;
-  color: #f5f6e9;
+  color: #b08968;
   line-height: 1.8;
+}
+
+.container-empat {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-empat img {
+  width: 250px;
+  height: auto;
+  margin: auto;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  height: 20rem;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.carousel > div {
+  flex: 1;
+  border-radius: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.carousel > div:hover {
+  flex: 5;
+}
+
+.carousel-1 {
+  background-image: url(../img/Project/1.jpg);
+}
+
+.carousel-2 {
+  background-image: url(../img/Project/2.1.jpg);
+}
+
+.carousel-3 {
+  background-image: url(../img/Project/3\ \(1\).jpg);
+}
+
+.carousel-4 {
+  background-image: url(../img/Project/Main\ Poster@2x.jpg);
+}
+
+.carousel-5 {
+  background-image: url(../img/Project/Main\ Event\ Poster.jpg);
 }
 
 @-webkit-keyframes tilt-in-fwd-tl {
@@ -554,6 +616,32 @@ strong {
   }
 }
 
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 /* responsive breakpoint */
 
 /* ukuran tablet */
@@ -577,7 +665,7 @@ strong {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    background-color: #b08968;
+    background-color: #cba688;
     z-index: 1;
     transform: translateX(100%);
     transition: all 1s;
