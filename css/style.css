@@ -5,6 +5,7 @@ html {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -67,7 +68,7 @@ nav ul li a:hover {
   display: flex;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 3px 4px 8px rgba(176, 137, 104, 0.8);
+  box-shadow: 3px 4px 8px rgba(176, 137, 104, 0.3);
   z-index: -2;
   margin-top: 140px;
   padding: 12px;
@@ -190,7 +191,7 @@ strong {
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
   border: 1px solid #ccc;
-  box-shadow: 5px 5px 10px rgba(140, 187, 73, 0.2), -5px -5px 10px rgba(140, 187, 73, 0.05);
+  box-shadow: 5px 5px 10px rgba(176, 137, 104, 0.3), -5px -5px 10px rgba(176, 137, 104, 0.3);
   border-radius: 15px;
 }
 
@@ -289,7 +290,7 @@ strong {
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
   border: 1px solid #ccc;
-  box-shadow: 5px 5px 10px rgba(140, 187, 73, 0.2), -5px -5px 10px rgba(140, 187, 73, 0.05);
+  box-shadow: 5px 5px 10px rgba(176, 137, 104, 0.3), -5px -5px 10px rgba(176, 137, 104, 0.3);
   border-radius: 15px;
 }
 
@@ -388,7 +389,7 @@ strong {
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
   border: 1px solid #ccc;
-  box-shadow: 5px 5px 10px rgba(140, 187, 73, 0.2), -5px -5px 10px rgba(140, 187, 73, 0.05);
+  box-shadow: 5px 5px 10px rgba(176, 137, 104, 0.3), -5px -5px 10px rgba(176, 137, 104, 0.3);
   border-radius: 15px;
 }
 
@@ -523,7 +524,7 @@ strong {
 }
 
 .container-empat {
-  width: 1100px;
+  max-width: 1100px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -575,6 +576,73 @@ strong {
 
 .carousel-5 {
   background-image: url(../img/Project/Main\ Event\ Poster.jpg);
+}
+
+.container-lima {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  color: #b08968;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #b08968;
+  border: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-input {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  color: #000;
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-input:focus {
+  border: 2px solid #b08968;
+}
+
+.contact-input::placeholder {
+  color: #ccc;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 60px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg,#bc6c25, #dda15e);
+  cursor: pointer;
 }
 
 @-webkit-keyframes tilt-in-fwd-tl {
@@ -665,7 +733,8 @@ strong {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    background-color: #cba688;
+    background-color: #e6ccb2;
+    box-shadow: 0 20px 40px rgba(176, 137, 104, 0.5);
     z-index: 1;
     transform: translateX(100%);
     transition: all 1s;
@@ -682,7 +751,8 @@ strong {
     align-items: center;
   }
 
-  .kolom-satu .satu {
+  .kolom-satu .tracking-in-expand {
+    width: 430px;
     text-align: center;
     margin-bottom: 35px;
   }
@@ -702,6 +772,10 @@ strong {
     align-items: center;
   }
 
+  .container-tiga img {
+    max-width: 380px;
+  }
+
   .Judul-dua {
     text-align: center;
     padding-right: 35px;
@@ -710,5 +784,9 @@ strong {
   .desc-content {
     text-align: justify;
     padding-right: 35px;
+  }
+
+  .contact-input {
+    width: 80vw;
   }
 }
