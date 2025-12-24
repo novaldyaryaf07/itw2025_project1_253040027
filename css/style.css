@@ -657,6 +657,7 @@ strong {
   .menu-toggle {
     display: flex;
   }
+
   nav ul {
     position: absolute;
     right: 0;
@@ -685,7 +686,7 @@ strong {
   }
 
   .kolom-satu .desc-diri {
-    width: 430px;
+    width: 350px;
     text-align: center;
     margin-bottom: 35px;
   }
