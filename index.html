@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="js/script.js" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav>
@@ -36,9 +37,9 @@
       <div class="container-satu">
         <div class="kolom-satu">
           <h1 class="Judul-1">Hello I'm <strong>NOVALDY</strong></h1>
-          <p class="tracking-in-expand">
+          <p class="desc-diri">
             Saya Novaldy Arya Friwansyah, 19 tahun dan berasal dari Bandung. Saya merupakan seorang mahasiswa jurusan Teknik Informatika di Universitas Pasundan yang memiliki keahlian di bidang Desain Grafis. Saya memiliki kepercayaan diri
-            untuk berbicara di depan umum, terutama di bidang musik tradisional dan olahraga. Selain itu, saya juga terbiasa bekerja secara tim dalam berbagai projek yang diberikan.
+            untuk berbicara di depan umum, serta keterampilan terutama di bidang musik tradisional dan olahraga. Selain itu, saya juga terbiasa bekerja secara tim dalam berbagai projek yang diberikan.
           </p>
         </div>
         <div class="sidebar-satu">
@@ -49,7 +50,7 @@
 
     <section id="skill">
       <div class="container-dua">
-        <div class="wrapper">
+        <div class="wrapper" data-aos="fade-up" data-aos-duration="1500">
           <div class="card-satu">
             <div class="front-page">
               <div class="card-info">
@@ -67,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="wrapper-dua">
+        <div class="wrapper-dua" data-aos="fade-up" data-aos-duration="1500">
           <div class="card-dua">
             <div class="front-page2">
               <div class="card-info2">
@@ -85,7 +86,7 @@
             </div>
           </div>
         </div>
-        <div class="wrapper-tiga">
+        <div class="wrapper-tiga" data-aos="fade-up" data-aos-duration="1500">
           <div class="card-tiga">
             <div class="front-page3">
               <div class="card-info3">
@@ -108,20 +109,21 @@
 
     <section id="experience">
       <div class="container-tiga">
-        <div class="tilt-in-fwd-tl">
-          <img src="img/PKL.jpg" alt="PKL" />
+        <div class="PKL-Picture">
+          <img src="img/PKL.jpg" alt="PKL" data-aos="fade-right" data-aos-duration="1500" />
         </div>
-        <div class="tracking-in-contract">
+        <div class="desc-pkl" data-aos="fade-left" data-aos-duration="1500">
           <h1 class="Judul-dua">REGTECH.ID</h1>
           <p class="desc-content">April 2024 - September 2024 PT. RegTech Teknologi Indonesia Anggota, Design Graphic Intern Membuat beberapa desain konten yang berada di Instagram @regtech.id</p>
+          <img src="img/RegTech Logo.png" alt="Logo-Company" class="logo-pkl" />
         </div>
       </div>
     </section>
 
     <section id="project">
       <div class="container-empat">
-        <img src="img/Typho 4@4x.png" alt="Typho-4" />
-        <div class="carousel">
+        <img src="img/Typho 4@4x.png" alt="Typho-4" data-aos="fade-up" data-aos-duration="2000" />
+        <div class="carousel" data-aos="fade-up" data-aos-duration="2000">
           <div class="carousel-1"></div>
           <div class="carousel-2"></div>
           <div class="carousel-3"></div>
@@ -132,20 +134,25 @@
     </section>
 
     <section id="contact">
-      <div class="container-lima">
+      <div class="container-lima" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
           <div class="contact-left-title">
             <h2>CONTACT</h2>
-            <hr>
+            <hr />
           </div>
-          <input type="hidden" name="access_key" value="a6ca35bd-c4ab-4e49-ac85-3ac66359c96c">
-          <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
-          <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+          <input type="hidden" name="access_key" value="a6ca35bd-c4ab-4e49-ac85-3ac66359c96c" />
+          <input type="text" name="name" placeholder="Your Name" class="contact-input" required />
+          <input type="email" name="email" placeholder="Your Email" class="contact-input" required />
           <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="js/script.js"></script>
   </body>
