@@ -654,6 +654,12 @@ strong {
 
 /* ukuran mobile */
 @media screen and (max-width: 576px) {
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
   .menu-toggle {
     display: flex;
   }
@@ -662,7 +668,7 @@ strong {
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 70%;
     height: 100vh;
     justify-content: space-evenly;
     flex-direction: column;
