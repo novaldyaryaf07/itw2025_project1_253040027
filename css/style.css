@@ -99,7 +99,7 @@ strong {
   color: #b08968;
   max-width: 500px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: end;
   line-height: 1.8;
 }
@@ -548,7 +548,7 @@ strong {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .carousel > div:hover {
